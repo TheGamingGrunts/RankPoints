@@ -2,6 +2,7 @@ package me.projectx.RankSystem.Events;
 
 import me.projectx.RankSystem.Main;
 import me.projectx.RankSystem.Utils.ResetPoints;
+import me.projectx.RankSystem.Utils.VaultMethods;
 
 import org.bukkit.Location;
 import org.bukkit.event.EventHandler;
@@ -40,5 +41,6 @@ public class PlayerDeath implements Listener {
 		}*/
 		
 		rp.resetPoints(e.getEntity());
+		VaultMethods.updateMoney(e.getEntity());
 	}
 }

@@ -4,6 +4,7 @@ import me.projectx.RankSystem.Main;
 import me.projectx.RankSystem.Utils.BoardMethods;
 import me.projectx.RankSystem.Utils.PlayerBoard;
 import me.projectx.RankSystem.Utils.RankMethods;
+import me.projectx.RankSystem.Utils.VaultMethods;
 
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -136,6 +137,7 @@ public class EntityKill implements Listener {
 					System.out.println("Player point value not set!");	
 				}	
 			}
+			VaultMethods.updateMoney(p);
 		}else{
 		}
 	}

@@ -32,6 +32,7 @@ public class PointMethods {
 			m.savePoints();
 			bm.setBoardPoints(player);
 		}
+		VaultMethods.updateMoney(player);
 	}
 	
 	/**
@@ -48,6 +49,7 @@ public class PointMethods {
 		}else{
 			System.out.println("No points!");
 		}
+		VaultMethods.updateMoney(player);
 		return points;
 	}
 }

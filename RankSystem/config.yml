@@ -1,0 +1,26 @@
+Points:
+  Skeleton: 1
+  Wither Skeleton: 2
+  Zombie: 3
+  Player: 4
+  Creeper: 5
+
+Default Rank: Weakling
+
+Reset Points Using Percentage: true
+Percent to Reset: 50
+
+Ranks:
+  Weakling:
+    requiredpoints: 0
+    regen: 5
+    attackdmg: 10
+  Novice:
+    requiredpoints: 5
+    regen: 3
+    attackdmg: 15 
+  Warrior:
+    requiredpoints: 10
+    regen: 0
+    attackdmg: 20
+    

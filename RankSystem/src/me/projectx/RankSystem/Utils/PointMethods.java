@@ -41,14 +41,8 @@ public class PointMethods {
 	 * @param player : The player to get the points
 	 * @return The player's points
 	 */
-	public int getPlayerPoints(Player player){
-		FileConfiguration c = m.getPoints();
-		
-		if (!(c.getString(player.getName()) == null)){
-			points = c.getInt(player.getName());
-		}else{
-			System.out.println("No points!");
-		}
+	public double getPlayerPoints(Player player){
+		double points = VaultMethods.economy.getBalance(p.getName())
 		VaultMethods.updateMoney(player);
 		return points;
 	}
